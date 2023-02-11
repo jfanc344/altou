@@ -14,11 +14,11 @@ function classNames(...classes) {
 
 const Navbar: NextPage = () => {
   return (
-    <Disclosure as="nav" className="w-full border-b-2 border-secondary">
+    <Disclosure as="nav" className="w-full border-b-2 border-secondary fixed z-50 bg-primary ">
       {({ open }) => (
         <>
-          <div className="mx-auto  px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className="mx-auto sm:px-6 lg:px-20">
+            <div className="relative flex h-20 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-secondary ">
@@ -36,8 +36,8 @@ const Navbar: NextPage = () => {
                 </div>
                 <div className="hidden sm:ml-6 sm:block absolute right-0">
                   <div className="flex space-x-4">
-                    <a href="#" className="text-secondary hover:bg-secondary hover:text-white px-7 py-2 rounded-full text-sm font-semibold outline outline-offset-2 outline-1">Services</a>
-                    <a href="#" className="text-secondary hover:bg-secondary hover:text-white px-7 py-2 rounded-full text-sm font-semibold outline outline-offset-2 outline-1">Contact</a>
+                    <a href="#" className="text-secondary hover:bg-secondary hover:text-white px-7 py-2 rounded-full text-base font-plain-regular outline outline-offset-2 outline-2">Services</a>
+                    <a href="#" className="text-secondary hover:bg-secondary hover:text-white px-7 py-2 rounded-full text-base font-plain-regular outline outline-offset-2 outline-2">Contact</a>
                   </div>
                 </div>
               </div>

@@ -3,5 +3,81 @@
 @tailwind utilities;
 
 .main-page {
-background-color: rgb(244 245 240)
+  background-color: rgb(244 245 240);
+}
+
+.rightArrow {
+  display: flex;
+  align-items: center;
+}
+
+.vertical1 {
+  border-left: 6px solid black;
+  height: 200px;
+  position:absolute;
+  left: 50%;
+}
+
+
+/* @font-face {
+  font-family: 'Plain';
+  font-style: bold;
+  font-weight:  bold;
+  src: 
+    url('../../public/fonts/Plain-Bold.otf') format('opentype'),
+    url('../../public/fonts/Plain-Medium.otf') format('opentype'),
+    url('../../public/fonts/Plain-Regular.otf') format('opentype'),
+    url('../../public/fonts/Plain-Thin.otf') format('opentype'),
+    url('../../public/fonts/Plain-Ultralight.otf') format('opentype'),
+    url('../../public/fonts/Plain-Ultrathin.otf') format('opentype');
+} */
+
+@layer base {
+  @font-face {
+    font-family: 'Plain-Bold';
+    src:
+      local('Plain Bold'),
+      local('Plain-Bold'),
+      url(../../public/fonts/Plain-Bold.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Plain-Medium';
+    src:
+      local('Plain Medium'),
+      local('Plain-Medium'),
+      url(../../public/fonts/Plain-Medium.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Plain-Regular';
+    src:
+      local('Plain Regular'),
+      local('Plain-Regular'),
+      url(../../public/fonts/Plain-Regular.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Plain-Thin';
+    src:
+      local('Plain Thin'),
+      local('Plain-Thin'),
+      url(../../public/fonts/Plain-Thin.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Plain-UltraLight';
+    src:
+      local('Plain UltraLight'),
+      local('Plain-UltraLight'),
+      url(../../public/fonts/Plain-Ultralight.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Plain-UltraThin';
+    src:
+      local('Plain UltraThin'),
+      local('Plain-UltraThin'),
+      url(../../public/fonts/Plain-Ultrathin.otf) format('opentype');
+  }
 }
